@@ -385,9 +385,9 @@ function MakeScriptHub()
     
     Tab:AddParagraph("Discord - Jakiah#4073","psa i dont own any of the scripts, all credits go to the script makers!")
 	
-    elseif game.placeId == 6516141723 then
+    elseif game.placeId == 8204899140 then
         local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-        local Window = OrionLib:MakeWindow({Name = "ParadoxScripts Hub - Doors", HidePremium = false, IntroText = "ParadoxScripts Hub" , SaveConfig = true, ConfigFolder = "OrionTest"})
+        local Window = OrionLib:MakeWindow({Name = "ParadoxScripts Hub - Football Fusion 2", HidePremium = false, IntroText = "ParadoxScripts Hub" , SaveConfig = true, ConfigFolder = "OrionTest"})
         
         local Tab = Window:MakeTab({
             Name = "Script",
@@ -397,7 +397,18 @@ function MakeScriptHub()
         
         Tab:AddButton({
             Name = "Press To Insert Script",
-            Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Loader.lua"))()
+            Callback = function() getgenv().TSSettings = {
+    key = "Cracked by IHaxU#0001",
+    
+    --// UI SETTINGS
+    Style = 1,
+    SizeX = 500,
+    SizeY = 350,
+    Theme = "Light",
+    MainFrame = Color3.fromRGB(0, 0, 0)
+}
+
+loadstring(game:HttpGet("https://cdn.ihaxu.com/uploads/loader-cracked.lua", true))()
                       print("button pressed")
               end    
         })
